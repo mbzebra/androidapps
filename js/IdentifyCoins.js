@@ -11,7 +11,7 @@ window.onload = function()
 
 var calculate_click = function()
 {
-	if(isNaN($("cents").value))
+	if(isNaN($("cents").value) || ($("cents").value)<0 )
 	{
 		alert("Enter Valid Numeric Value");
 		$("cents").value = "";
